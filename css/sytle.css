@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*----RESEAT----*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Raleway", sans-serif !important;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----MAIN-----*/
+main h2{
+    background-color: rgb(217, 140, 151);
+    font-size: 30px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    padding: 20px;
+    font-family: "Raleway", sans-serif !important;
+   
+}
+
+/*-----RECOMENDACIONES-----*/
+
+.subtitulo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo-contenedor p{
+    width: 250px;
+    text-align: center;
+    
+}
+
+
+
+.boton{
+    background-color: rgb(136, 95, 136);
+    text-decoration: none;
+    color: rgb(250, 245, 240);
+    font-size: 25px;
+    padding: 15px 50px;
+   
+}
+
+
+.recomendaciones-grid{
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px 160px 160px;
+    grid-auto-rows: 240px 240px;
+    padding: 50px;
+    justify-content: right;
+    
+}
+.grid-item{
+    border: 3px solid rgb(51, 51, 51);
+    position: relative;
+}
+
+.recomendaciones-grid div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.grid-item h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(250, 245, 240);
+    padding: 10px;
+}
+
+
+/*-----Sección autoras-----*/
+
+
+
+.subtitulo-autoras-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtitulo-autoras-contenedor div{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin-right: 150px;
+    
+}
+
+.subtitulo-autoras-contenedor p{
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 30px;   
+    
+}
+
+
+.autoras{
+    
+    display: inline-block;
+    margin: 20px;
+}
+
+.autoras img{
+    width: 300px;
+    height: 350px;
+}
+
+
+
+/*-----Sección reseña-----*/
+
+.seccion-reseña-contenedor{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/*-----Class sección reseña-----*/
+
+
+.seccion-reseña-contenedor div{
+    width: 33%;
+    text-align: center; 
+    
+}
+
+.seccion-reseña-contenedor p{
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+.parte-2 .portada{
+    width: 400px;
+    margin-top: 50px;
+}
+
+.parte-2 .puntuacion{
+    width: 420px;
+    margin-bottom: 30px;
+   
+}
+
+.parte-3 p{
+    width: 450px;
+    text-align: justify;
+   
+}
+
+
+/*----qUIENES SOMOS-----*/
+
+.quienes-somos p{
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+
+
+
+
+.quienes-somos-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+  width: 1200px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+.quienes-somos-contenedor p{
+    text-align: justify;
+    width: 450px;
+}
+
+.quienes-somos-flexa,
+.quienes-somos-flexb {
+  display: flex;
+  flex-direction: column;
+  background-color:  rgb(240, 240, 240);
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  
+ 
+}
+
+
+.quienes-somos-flexa img,
+.quienes-somos-flexb img{
+
+    width: 400px;
+    height: 440px;
+    margin-top: 60px;
+
+
+}
+
+
+
+ 
+/*----FOOTER-----*/
+footer{
+    background-color: rgba(136, 95, 136);
+   
+}
+
+
+main footer h2{
+    font-family: "Raleway", sans-serif !important;
+   
+   
+}
+
+
+footer h2{
+    color: rgb(250, 245, 240);
+    font-family: "Raleway", sans-serif !important;
+
+}
+footer p{
+    color: rgb(250, 245, 240);
+}
+footer a img{
+    width: 50px;
+    height: 50px;}
+
+
+
+
+
+
+@media screen and (max-width: 1217px){
+    .quienes-somos-contenedor{ 
+        grid-template-columns: 1fr;
+}
+
+
+.quienes-somos-flexa,
+.quienes-somos-flexb { 
+  align-items: start;
+}
+
+}
+
+
+@media screen and (max-width: 929px){
+    header{flex-direction: column;}
+}
