@@ -93,24 +93,19 @@ main h2{
 
 
 
-.boton{
-    background-color: rgb(136, 95, 136);
-    text-decoration: none;
-    color: rgb(250, 245, 240);
-    font-size: 25px;
-    padding: 15px 50px;
-   
-}
-
 
 .recomendaciones-grid{
     display: grid;
     grid-template-columns: 160px 160px 160px 160px 160px 160px;
     grid-auto-rows: 240px 240px;
     padding: 50px;
-    justify-content: right;
+    
     
 }
+
+
+
+
 .grid-item{
     border: 3px solid rgb(51, 51, 51);
     position: relative;
@@ -135,7 +130,14 @@ main h2{
 
 /*-----Sección autoras-----*/
 
-
+.boton{
+    background-color: rgb(136, 95, 136);
+    text-decoration: none;
+    color: rgb(250, 245, 240);
+    font-size: 25px;
+    padding: 15px 50px;
+   
+}
 
 .subtitulo-autoras-contenedor{
     display: flex;
@@ -302,21 +304,49 @@ footer i:hover{
 }
 
 
+/*----MEDIA-----*/
+
+
+@media screen and (max-width: 1135px){
+.subtitulo-contenedor p{
+    display: none;  
+}
+}
+
 
 @media screen and (max-width: 1217px){
     .quienes-somos-contenedor{ 
         grid-template-columns: 1fr;
 }
 
-
 .quienes-somos-flexa,
 .quienes-somos-flexb { 
   align-items: start;
 }
-
 }
 
 
-@media screen and (max-width: 929px){
-    header{flex-direction: column;}
+
+@media screen and (max-width: 957px){
+.recomendaciones-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; 
+    padding: 50px;
 }
+}
+
+
+@media screen and (max-width: 520px){
+
+     .grid-item h3 {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
