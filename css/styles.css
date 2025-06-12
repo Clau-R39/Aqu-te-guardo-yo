@@ -9,7 +9,7 @@ body{
 }
 
 
-h1
+
 
 header{
     background-color: rgb(136, 95, 136);
@@ -235,16 +235,13 @@ align-items: center;
     
 }
 
-
-
 .quienes-somos-contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 40px;
-  width: 1200px;
-  margin: auto;
-  padding: 20px;
-  
+  display: flex;
+  justify-content: center;    /* CENTRA los cuadros en el eje X */
+  align-items: flex-start;
+  gap: 40px;                  
+  padding: 40px;
+  flex-wrap: wrap;            /* permite que se apilen si la pantalla es pequeña */
 }
 
 .quienes-somos-contenedor p{
@@ -255,15 +252,16 @@ align-items: center;
 .quienes-somos-flexa,
 .quienes-somos-flexb {
   display: flex;
-  flex-direction: column;
-  background-color:  rgb(240, 240, 240);
+  flex-direction: column; 
+  text-align: center;
+  background-color: rgb(240, 240, 240);
   align-items: center;
   margin-bottom: 40px;
   padding-bottom: 40px;
+  width: 560px;
+  height: 890px;
   
- 
 }
-
 
 .quienes-somos-flexa img,
 .quienes-somos-flexb img{
@@ -315,14 +313,14 @@ footer i:hover{
 
 @media screen and (max-width: 1227px) {
   .seccion-reseña-contenedor {
-    flex-direction: column;     /* cambia de fila a columna */
-    align-items: center;        /* centra hijos horizontalmente */
-    text-align: center;         /* opcional: centra texto interno */
+    flex-direction: column;     
+    align-items: center;        
+    text-align: center;         
   }
 
   .seccion-reseña-contenedor > div {
-    width: 100%;                /* cada bloque ocupa todo el ancho disponible */
-    max-width: 500px;           /* límite para que no se vean gigantes */
+    width: 100%;               
+    max-width: 500px;           
     margin-bottom: 20px;
   }
 }
@@ -330,22 +328,8 @@ footer i:hover{
 
 
 
-
-@media screen and (max-width: 1217px){
-    .quienes-somos-contenedor{ 
-        grid-template-columns: 1fr;
-}
-
-.quienes-somos-flexa,
-.quienes-somos-flexb { 
-  align-items: start;
-}
-}
-
-
-
 @media screen and (max-width: 1161px){
-    .seccion-reseña-contenedor .parte-1 {
+    .seccion-reseña-contenedor.parte-1{
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -381,6 +365,19 @@ footer i:hover{
 }
 
 
+@media (max-width: 576px) {
+
+ 
+
+  .quienes-somos-flexa,
+  .quienes-somos-flexb {
+    text-align: center;
+
+    
+   
+  }
+
+
 
 @media screen and (max-width: 520px){
 
@@ -398,7 +395,42 @@ footer i:hover{
     }
 }
 
+}
 
+@media (max-width: 432px) {
+
+.quienes-somos-flexa,
+.quienes-somos-flexb {
+  width: 360px;
+  height: 720px;
+
+  
+}
+
+.quienes-somos-contenedor {
+
+  gap: 5px;                  
+   
+}
+
+
+.quienes-somos-flexa img,
+.quienes-somos-flexb img{
+
+    width: 300px;
+    height: 350px;
+
+}
+
+.quienes-somos-contenedor p{
+    text-align: justify;
+    width: 350px;
+    font-size: small;
+}
+
+
+
+}
 
 
 
