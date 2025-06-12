@@ -1,0 +1,161 @@
+
+//*RECOMENDACIONES
+
+.subtitulo-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    width: 250px;
+    text-align: center;
+  }
+}
+
+.recomendaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-auto-rows: 240px;
+  padding: 50px;
+
+  div {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.grid-item {
+  border: 3px solid rgb(51, 51, 51);
+  position: relative;
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(250, 245, 240);
+    padding: 10px;
+  }
+}
+
+//* AUTORAS 
+
+.subtitulo-autoras-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  .texto-autoras {
+    flex: 0 0 220px;
+    text-align: center;
+    justify-items: center;
+    justify-content: end;
+    margin-top: 100px;
+    margin-right: 200px;
+  }
+
+  .autoras-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin-bottom: 20px;
+
+    .grid-item-autoras {
+      background-color: rgb(240, 240, 240);
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+  }
+}
+
+//*SECCIÓN RESEÑA
+
+.seccion-reseña-contenedor {
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 33%;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .parte-2 {
+    .portada {
+      width: 400px;
+      margin-top: 50px;
+    }
+
+    .puntuacion {
+      width: 420px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .parte-3 {
+    p {
+      width: 450px;
+      text-align: justify;
+    }
+  }
+}
+
+//* SECCIÓN QUIENES SOMOS
+
+.quienes-somos {
+  p {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  &-contenedor {
+    display: flex;
+    justify-content: center; /* CENTRA los cuadros en el eje X */
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap; /* permite que se apilen si la pantalla es pequeña */
+
+    p {
+      text-align: justify;
+      width: 450px;
+    }
+  }
+
+  &-flexa,
+  &-flexb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 560px;
+    height: 890px;
+
+    img {
+      width: 400px;
+      height: 440px;
+      margin-top: 60px;
+    }
+  }
+}
