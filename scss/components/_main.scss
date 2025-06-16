@@ -1,5 +1,7 @@
 
-//*RECOMENDACIONES
+/*INDEX*/
+
+//*recomendaciones
 
 .subtitulo-contenedor {
   display: flex;
@@ -40,7 +42,7 @@
   }
 }
 
-//* AUTORAS 
+//* autoras
 
 .subtitulo-autoras-contenedor {
   display: flex;
@@ -80,7 +82,7 @@
   }
 }
 
-//*SECCIÓN RESEÑA
+//*reseña
 
 .seccion-reseña-contenedor {
   display: flex;
@@ -117,7 +119,7 @@
   }
 }
 
-//* SECCIÓN QUIENES SOMOS
+//* quienes somos
 
 .quienes-somos {
   p {
@@ -159,3 +161,413 @@
     }
   }
 }
+
+/*AUTORAS */
+
+.pagina-autoras {
+  p {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+}
+
+
+ .contenedor-grid-pagina-autoras {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-grid-pagina-autoras > section {
+  flex: 0 0 300px;
+}
+
+//*Monica Ojeda
+
+.grid-monica-ojeda {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+@mixin full-size-img {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin custom-border($width: 3px, $color: rgb(136, 95, 136)) {
+  border: $width solid $color;
+}
+
+@mixin grid-span($cols: 2, $rows: 2) {
+  grid-column: span $cols;
+  grid-row: span $rows;
+}
+
+@mixin text-style(
+  $color: rgb(136, 95, 136),
+  $align: justify,
+  $margin-top: 10px,
+  $width: 60%
+) {
+  margin-top: $margin-top;
+  color: $color;
+  text-align: $align;
+  width: $width;
+}
+
+
+div img {
+  @include full-size-img;
+}
+
+.grid-libros-o {
+  @include custom-border;
+}
+
+.grid-ojeda {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-o {
+  @include grid-span;
+  @include text-style;
+}
+
+
+//*Han Kang
+
+.grid-han-kang {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+.grid-libros-k {
+  @include custom-border;
+}
+
+.grid-kang {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-k {
+  @include grid-span;
+  @include text-style;
+}
+
+//* Rita Indiana
+
+.grid-rita-indiana {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+.grid-libros-i {
+  @include custom-border;
+}
+
+.grid-indiana {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-i {
+  @include grid-span;
+  @include text-style;
+}
+
+//* Daniela Catrileo 
+
+.grid-daniela-catrileo {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+.grid-libros-c {
+  @include custom-border;
+}
+
+.grid-catrileo {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-c {
+  @include grid-span;
+  @include text-style;
+}
+
+
+//* Rita Indiana
+
+.grid-mariana-enriquez {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+.grid-libros-e {
+  @include custom-border;
+}
+
+.grid-enriquez {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-e {
+  @include grid-span;
+  @include text-style;
+}
+
+
+//* Karina Pacheco
+
+.grid-karina-pacheco {
+  @include grid-config(
+    130px 130px 130px 130px,
+    200px 200px 200px 200px
+  );
+}
+
+.grid-libros-p {
+  @include custom-border;
+}
+
+.grid-pacheco {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-p {
+  @include grid-span;
+  @include text-style;
+}
+
+
+/*RESEÑAS*/
+
+.pagina-reseñas {
+  p {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+}
+
+/* Tundra*/
+
+.grid-pagina-tundra {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: left;
+
+}
+
+
+.grid-portada-t {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+
+.texto-tundra {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-t {
+  img {
+    width: 360px;
+    height: 50px;
+  }
+}
+
+
+/*Errantes*/
+
+.grid-pagina-errantes {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: right;
+}
+
+.grid-portada-e {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+
+.texto-errantes {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-e {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/*Mujer*/
+
+.grid-pagina-mujer {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: left; 
+}
+
+.grid-portada-m {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+
+.texto-mujer {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-m {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/*Desesperados*/
+
+.grid-pagina-desesperados {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: right;
+
+}
+
+.grid-portada-d {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+
+.texto-desesperados {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-d {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/*Caminos abiertos*/
+
+.grid-pagina-caminos {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: left; 
+}
+
+.grid-portada-c {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+.texto-caminos {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-c {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/*Polvo*/
+
+.grid-pagina-polvo {
+  @include custom-grid(360px 200px 300px, 200px 200px 50px, 10px, 50px);
+justify-content: right;
+
+}
+
+.grid-portada-p {
+  grid-row: span 2;
+
+  img {
+    @include full-img;
+  }
+}
+
+.texto-polvo {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+
+  p {
+    @include texto-estilo;
+  }
+}
+
+.grid-puntuacion-p {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+

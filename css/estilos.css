@@ -1,5 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.grid-monica-ojeda div img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-libros-o {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-ojeda {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-o {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
 /*----RESEAT----*/
 * {
   margin: 0;
@@ -60,6 +84,7 @@ header .dropdown-menu {
   background-color: rgb(136, 95, 136);
 }
 
+/*INDEX*/
 .subtitulo-contenedor {
   display: flex;
   justify-content: center;
@@ -186,6 +211,402 @@ header .dropdown-menu {
   width: 400px;
   height: 440px;
   margin-top: 60px;
+}
+
+/*AUTORAS */
+.pagina-autoras p {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.contenedor-grid-pagina-autoras {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-grid-pagina-autoras > section {
+  flex: 0 0 300px;
+}
+
+.grid-monica-ojeda {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-libros-o {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-ojeda {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-o {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+.grid-han-kang {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+.grid-libros-k {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-kang {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-k {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+.grid-rita-indiana {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+.grid-libros-i {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-indiana {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-i {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+.grid-daniela-catrileo {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+.grid-libros-c {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-catrileo {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-c {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+.grid-mariana-enriquez {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+.grid-libros-e {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-enriquez {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-e {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+.grid-karina-pacheco {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  column-gap: 10px;
+  padding: 50px;
+}
+
+.grid-libros-p {
+  border: 3px solid rgb(136, 95, 136);
+}
+
+.grid-pacheco {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-p {
+  grid-column: span 2;
+  grid-row: span 2;
+  margin-top: 10px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+  width: 60%;
+}
+
+/*RESEÑAS*/
+.pagina-reseñas p {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Tundra*/
+.grid-pagina-tundra {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: left;
+}
+
+.grid-portada-t {
+  grid-row: span 2;
+}
+.grid-portada-t img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-tundra {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-tundra p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-t img {
+  width: 360px;
+  height: 50px;
+}
+
+/*Errantes*/
+.grid-pagina-errantes {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: right;
+}
+
+.grid-portada-e {
+  grid-row: span 2;
+}
+.grid-portada-e img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-errantes {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-errantes p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-e img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Mujer*/
+.grid-pagina-mujer {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: left;
+}
+
+.grid-portada-m {
+  grid-row: span 2;
+}
+.grid-portada-m img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-mujer {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-mujer p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-m img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Desesperados*/
+.grid-pagina-desesperados {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: right;
+}
+
+.grid-portada-d {
+  grid-row: span 2;
+}
+.grid-portada-d img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-desesperados {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-desesperados p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-d img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Caminos abiertos*/
+.grid-pagina-caminos {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: left;
+}
+
+.grid-portada-c {
+  grid-row: span 2;
+}
+.grid-portada-c img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-caminos {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-caminos p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-c img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Polvo*/
+.grid-pagina-polvo {
+  display: grid;
+  grid-template-columns: 360px 200px 300px;
+  grid-auto-rows: 200px 200px 50px;
+  column-gap: 10px;
+  padding: 50px;
+  justify-content: right;
+}
+
+.grid-portada-p {
+  grid-row: span 2;
+}
+.grid-portada-p img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-polvo {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rgb(240, 240, 240);
+}
+.texto-polvo p {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}
+
+.grid-puntuacion-p img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {

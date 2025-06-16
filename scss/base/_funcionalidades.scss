@@ -1,0 +1,77 @@
+@mixin grid-config($columns, $rows, $gap: 10px, $padding: 50px) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-auto-rows: $rows;
+  column-gap: $gap;
+  padding: $padding;
+}
+
+@mixin full-size-img {
+  width: 100%;
+  height: 100%;
+}
+
+// Mixin bordes 
+@mixin custom-border($width: 3px, $color: rgb(136, 95, 136)) {
+  border: $width solid $color;
+}
+
+// Mixin columnas/filas grid
+@mixin grid-span($col: 2, $row: 2) {
+  grid-column: span $col;
+  grid-row: span $row;
+}
+
+// Mixin bloques de texto
+@mixin text-block($color: rgb(136, 95, 136), $align: justify, $margin-top: 10px, $width: 60%) {
+  margin-top: $margin-top;
+  color: $color;
+  text-align: $align;
+  width: $width;
+}
+
+// Mixins  selectores
+
+.grid-monica-ojeda {
+  div img {
+    @include full-size-img;
+  }
+}
+
+.grid-libros-o {
+  @include custom-border;
+}
+
+.grid-ojeda {
+  @include grid-span;
+  background-color: rgb(240, 240, 240);
+}
+
+.texto-o {
+  @include grid-span;
+  @include text-block;
+}
+
+//Mixin reseñas
+
+// Mixin para un grid general
+@mixin custom-grid($columns, $rows, $gap: 10px, $padding: 0) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-auto-rows: $rows;
+  column-gap: $gap;
+  padding: $padding;
+}
+
+// Mixin para imagen al 100%
+@mixin full-img {
+  width: 100%;
+  height: 100%;
+}
+
+// Mixin para texto en caja
+@mixin texto-estilo {
+  margin: 20px;
+  color: rgb(136, 95, 136);
+  text-align: justify;
+}

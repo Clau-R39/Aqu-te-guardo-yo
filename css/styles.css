@@ -272,6 +272,107 @@ align-items: center;
 
 }
 
+
+/*autoras*/
+
+.pagina-autoras p{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.grid-monica-ojeda{
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px;
+    grid-auto-rows: 200px 200px 200px 200px;
+    column-gap: 10px;   
+    padding: 50px;
+}
+
+.grid-libros-o{
+    border: 3px solid rgb(136, 95, 136)
+}
+
+.grid-monica-ojeda div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*reseñas*/
+
+.pagina-reseñas p{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.grid-pagina-tundra{
+    display: grid;
+    grid-template-columns: 360px 200px 300px;
+    grid-auto-rows: 200px 200px 60px;
+    column-gap: 10px;   
+    padding: 50px;
+}
+
+.grid-portada-t{
+    grid-row: span 2;  
+}
+
+.grid-portada-t img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-tundra{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: rgb(240, 240, 240);
+}
+
+.texto-tundra p{
+    margin: 20px;
+    color: rgb(136, 95, 136);
+    text-align: justify;
+}
+
+.grid-puntuacion-t img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---contactanos--*/
+
+.contenedor-contactanos {
+  display: flex;
+  justify-content: center;    /* CENTRA los cuadros en el eje X */
+  gap: 40px;                  
+  padding: 40px;
+  flex-wrap: wrap;            /* permite que se apilen si la pantalla es pequeña */
+}
+
+.contactanos-flexa,
+.contactanos-flexb {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  width: 560px;
+  height: 400px
+}
+
+
+
+
+
+
+
+
 /*----FOOTER-----*/
 
 footer{
