@@ -1,0 +1,250 @@
+// === Media Query: hasta 1227px ===
+@media screen and (max-width: 1227px) {
+  .seccion-reseña-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    >div {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+// === Media Query: hasta 1161px ===
+
+@media screen and (max-width: 1161px) {
+  .seccion-reseña-contenedor {
+    &.parte-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+// === Media Query: hasta 1135px ===
+@media screen and (max-width: 1135px) {
+  .subtitulo-contenedor {
+    p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .texto-autoras {
+    display: none;
+  }
+}
+
+// === Media Query: hasta 980px ===
+@media screen and (max-width: 1068px) {
+
+  .grid-pagina-tundra,
+  .grid-pagina-errantes,
+  .grid-pagina-mujer,
+  .grid-pagina-desesperados,
+  .grid-pagina-caminos,
+  .grid-pagina-polvo {
+    justify-content: center;
+  }
+
+  .grid-pagina-tundra {
+    display: grid;
+    grid-template-columns: 260px;
+    column-gap: 10px;
+    padding: 50px;
+  }
+
+  .texto-tundra {
+    grid-row: span 6;
+    background-color: rgb(240, 240, 240);
+  }
+
+}
+
+
+
+
+
+
+
+
+// === Media Query: hasta 963px ===
+@media (max-width: 963px) {
+  .recomendaciones-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px;
+    padding: 20px;
+  }
+}
+
+
+
+@media (max-width: 890px) {
+  .pagina-reseñas{
+     .contenedor-grid-pagina-reseñas{
+      .grid-pagina-tundra{
+        display: grid;
+    grid-template-columns: 260px;
+    column-gap: 10px;
+    padding: 50px;
+  
+
+  .texto-tundra {
+    grid-row: span 6;
+    background-color: rgb(240, 240, 240);
+  }
+}
+}
+} 
+  
+
+      
+    
+
+
+.seccion-reseña {
+    .seccion-reseña-contenedor {
+      .parte-2 {
+        .portada {
+          width: 300px;
+          margin-top: 50px;
+        }
+
+        .puntuacion {
+          width: 300px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .parte-3 {
+        p {
+          width: 350px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// === Media Query: hasta 620px ===
+@media (max-width: 620px) {
+
+  .contenedor-grid-pagina-autoras {
+    justify-content: center;
+  }
+
+  .contenedor-grid-pagina-autoras section {
+    flex-wrap: wrap;
+    justify-content: center; // centra los ítems dentro del grid
+
+  }
+
+
+}
+
+
+
+
+
+
+// === Media Query: hasta 576px ===
+@media (max-width: 576px) {
+
+  .quienes-somos-flexa,
+  .quienes-somos-flexb {
+    text-align: center;
+  }
+}
+
+// === Media Query: hasta 520px ===
+@media screen and (max-width: 520px) {
+  .grid-item {
+    h3 {
+      font-size: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+// === Media Query: hasta 479px ===
+@media (max-width: 479px) {
+  .recomendaciones-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    padding: 20px;
+  }
+}
+
+// === Media Query: hasta 432px ===
+@media (max-width: 432px) {
+
+  .quienes-somos-flexa,
+  .quienes-somos-flexb {
+    width: 360px;
+    height: 720px;
+
+    img {
+      width: 300px;
+      height: 350px;
+    }
+  }
+
+  .quienes-somos-contenedor {
+    gap: 5px;
+
+    p {
+      text-align: justify;
+      width: 350px;
+      font-size: small;
+    }
+  }
+}
+
+// === Media Query: hasta 397px ===
+
+@media (max-width: 397px) {
+  .seccion-reseña {
+    .seccion-reseña-contenedor {
+      .parte-2 {
+        .portada {
+          width: 300px;
+          margin-top: 50px;
+        }
+
+        .puntuacion {
+          width: 300px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .parte-3 {
+        p {
+          width: 350px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  footer {
+    text-align: center;
+  }
+}

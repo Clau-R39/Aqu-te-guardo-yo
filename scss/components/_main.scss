@@ -44,6 +44,14 @@
 
 //* autoras
 
+.boton-autoras {
+    background-color: rgb(136, 95, 136);
+    text-decoration: none;
+    color: rgb(250, 245, 240);
+    font-size: 25px;
+    padding: 15px 50px;
+  }
+
 .subtitulo-autoras-contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +171,8 @@
 }
 
 /*AUTORAS */
+
+
 
 .pagina-autoras {
   p {
@@ -571,3 +581,49 @@ justify-content: right;
   }
 }
 
+/*CONTÁCTANOS*/
+.contenedor-contactanos {
+  display: flex;
+  justify-content: center;  // CENTRA los cuadros en el eje X
+  gap: 10px;
+  padding: 40px;
+  flex-wrap: wrap;          // permite que se apilen si la pantalla es pequeña
+}
+
+.contactanos-flexa,
+.contactanos-flexb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  &.contactanos-flexa {
+    width: 700px;
+    height: 700px;
+  }
+
+  &.contactanos-flexb {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+.seccion-contactanos {
+  img {
+    width: 1520px;
+    height: 500px;
+  }
+}
+
+.input-corto {
+  width: 600px;
+}
+
+.input-largo {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+}
