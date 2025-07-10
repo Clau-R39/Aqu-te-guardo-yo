@@ -3,6 +3,25 @@
 
 //*recomendaciones
 
+.boton{
+  background-color: rgb(136, 95, 136);
+  text-decoration: none;
+  color: rgb(250, 245, 240);
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+  text-align: center;
+  
+  &:hover {
+    background-color: rgb(170, 75, 95); 
+    color: white;
+    width: 300px;
+  }
+}
+
+
 .subtitulo-contenedor {
   display: flex;
   justify-content: center;
@@ -45,12 +64,26 @@
 //* autoras
 
 .boton-autoras {
-    background-color: rgb(136, 95, 136);
-    text-decoration: none;
-    color: rgb(250, 245, 240);
-    font-size: 25px;
-    padding: 15px 50px;
+  background-color: rgb(136, 95, 136);
+  text-decoration: none;
+  color: rgb(250, 245, 240);
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+  
+  &:hover {
+    background-color: rgb(170, 75, 95); 
+    color: white;
+    width: 300px;
   }
+}
+
+
+
+ 
+
 
 .subtitulo-autoras-contenedor {
   display: flex;
@@ -585,7 +618,7 @@ justify-content: right;
 .contenedor-contactanos {
   display: flex;
   justify-content: center;  // CENTRA los cuadros en el eje X
-  gap: 10px;
+  gap: 30px;
   padding: 40px;
   flex-wrap: wrap;          // permite que se apilen si la pantalla es pequeña
 }

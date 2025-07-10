@@ -18,13 +18,22 @@ main h2{
 
 body{
     font-family: "Raleway", sans-serif !important;
+    height: 100%;
 }
 
 .boton{
-    background-color: rgb(136, 95, 136);
-    text-decoration: none;
-    color: rgb(250, 245, 240);
-    font-size: 25px;
-    padding: 15px 50px;
-   
+  background-color: rgb(136, 95, 136);
+  text-decoration: none;
+  color: rgb(250, 245, 240);
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+}
+
+.boton-autoras:hover {
+  background-color: rgb(170, 75, 95);
+  color: white;
+  width: 300px;
 }

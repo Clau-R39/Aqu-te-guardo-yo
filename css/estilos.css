@@ -41,6 +41,7 @@ main h2 {
 
 body {
   font-family: "Raleway", sans-serif !important;
+  height: 100%;
 }
 
 .boton {
@@ -48,11 +49,21 @@ body {
   text-decoration: none;
   color: rgb(250, 245, 240);
   font-size: 25px;
+  width: 200px;
   padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+}
+
+.boton-autoras:hover {
+  background-color: rgb(170, 75, 95);
+  color: white;
+  width: 300px;
 }
 
 header {
-  background-color: rgb(136, 95, 136);
+  background: #885F88;
+  background: linear-gradient(90deg, rgb(136, 95, 136) 0%, rgb(170, 75, 95) 100%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -81,10 +92,28 @@ header a.dropdown-item {
   color: rgb(250, 245, 240);
 }
 header .dropdown-menu {
-  background-color: rgb(136, 95, 136);
+  background: #885F88;
+  background: linear-gradient(90deg, rgb(136, 95, 136) 0%, rgb(181, 117, 144) 56%, rgb(217, 140, 151) 100%);
 }
 
 /*INDEX*/
+.boton {
+  background-color: rgb(136, 95, 136);
+  text-decoration: none;
+  color: rgb(250, 245, 240);
+  font-size: 25px;
+  width: 200px;
+  padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+  text-align: center;
+}
+.boton:hover {
+  background-color: rgb(170, 75, 95);
+  color: white;
+  width: 300px;
+}
+
 .subtitulo-contenedor {
   display: flex;
   justify-content: center;
@@ -124,7 +153,15 @@ header .dropdown-menu {
   text-decoration: none;
   color: rgb(250, 245, 240);
   font-size: 25px;
+  width: 200px;
   padding: 15px 50px;
+  display: inline-block;
+  transition-duration: 2s;
+}
+.boton-autoras:hover {
+  background-color: rgb(170, 75, 95);
+  color: white;
+  width: 300px;
 }
 
 .subtitulo-autoras-contenedor {
@@ -621,7 +658,7 @@ div img {
 .contenedor-contactanos {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   padding: 40px;
   flex-wrap: wrap;
 }
@@ -663,7 +700,8 @@ div img {
 }
 
 footer {
-  background-color: rgb(136, 95, 136);
+  background: #885F88;
+  background: linear-gradient(90deg, rgb(136, 95, 136) 0%, rgb(170, 75, 95) 100%);
 }
 footer h1 {
   color: rgb(250, 245, 240);
@@ -712,19 +750,9 @@ footer i:hover {
     display: none;
   }
 }
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1030px) {
   .texto-autoras {
     display: none;
-  }
-}
-@media screen and (max-width: 1068px) {
-  .grid-pagina-tundra,
-  .grid-pagina-errantes,
-  .grid-pagina-mujer,
-  .grid-pagina-desesperados,
-  .grid-pagina-caminos,
-  .grid-pagina-polvo {
-    justify-content: center;
   }
 }
 @media (max-width: 963px) {
@@ -734,6 +762,39 @@ footer i:hover {
     padding: 20px;
   }
 }
+@media screen and (max-width: 986px) {
+  .grid-pagina-tundra,
+  .grid-pagina-errantes,
+  .grid-pagina-mujer,
+  .grid-pagina-desesperados,
+  .grid-pagina-caminos,
+  .grid-pagina-polvo {
+    display: grid;
+    grid-template-columns: 260px;
+    column-gap: 10px;
+    padding: 50px;
+    justify-content: center;
+  }
+  .texto-tundra,
+  .texto-errantes,
+  .texto-mujer,
+  .texto-desesperados,
+  .texto-caminos,
+  .texto-polvo {
+    grid-row: span 6;
+    background-color: rgb(240, 240, 240);
+  }
+}
+@media (max-width: 710px) {
+  .grid-libros-o,
+  .grid-libros-k,
+  .grid-libros-i,
+  .grid-libros-c,
+  .grid-libros-e,
+  .grid-libros-p {
+    display: none;
+  }
+}
 @media (max-width: 620px) {
   .contenedor-grid-pagina-autoras {
     justify-content: center;
@@ -741,6 +802,28 @@ footer i:hover {
   .contenedor-grid-pagina-autoras section {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 595px) {
+  .grid-monica-ojeda,
+  .grid-han-kang,
+  .grid-rita-indiana,
+  .grid-daniela-catrileo,
+  .grid-mariana-enriquez,
+  .grid-karina-pacheco {
+    display: grid;
+    grid-template-columns: 130px;
+    grid-auto-rows: 200px 200px 200px 200px;
+    column-gap: 10px;
+    padding: 50px;
+  }
+  .texto-o,
+  .texto-k,
+  .texto-i,
+  .texto-c,
+  .texto-e,
+  .texto-p {
+    width: 200px;
   }
 }
 @media (max-width: 576px) {
@@ -760,6 +843,16 @@ footer i:hover {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 150px;
     padding: 20px;
+  }
+}
+@media (max-width: 455px) {
+  .grid-puntuacion-t,
+  .grid-puntuacion-e,
+  .grid-puntuacion-m,
+  .grid-puntuacion-d,
+  .grid-puntuacion-c,
+  .grid-puntuacion-p {
+    display: none;
   }
 }
 @media (max-width: 432px) {

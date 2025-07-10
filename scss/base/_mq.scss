@@ -41,43 +41,11 @@
   }
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1030px) {
   .texto-autoras {
     display: none;
   }
 }
-
-// === Media Query: hasta 980px ===
-@media screen and (max-width: 1068px) {
-
-  .grid-pagina-tundra,
-  .grid-pagina-errantes,
-  .grid-pagina-mujer,
-  .grid-pagina-desesperados,
-  .grid-pagina-caminos,
-  .grid-pagina-polvo {
-    justify-content: center;
-  }
-
-  .grid-pagina-tundra {
-    display: grid;
-    grid-template-columns: 260px;
-    column-gap: 10px;
-    padding: 50px;
-  }
-
-  .texto-tundra {
-    grid-row: span 6;
-    background-color: rgb(240, 240, 240);
-  }
-
-}
-
-
-
-
-
-
 
 
 // === Media Query: hasta 963px ===
@@ -90,56 +58,42 @@
 }
 
 
-
-@media (max-width: 890px) {
-  .pagina-reseñas{
-     .contenedor-grid-pagina-reseñas{
-      .grid-pagina-tundra{
-        display: grid;
+@media screen and (max-width: 986px) {
+  .grid-pagina-tundra,
+  .grid-pagina-errantes,
+  .grid-pagina-mujer,
+  .grid-pagina-desesperados,
+  .grid-pagina-caminos,
+  .grid-pagina-polvo {
+    display: grid;
     grid-template-columns: 260px;
     column-gap: 10px;
     padding: 50px;
-  
+    justify-content: center;
+  }
 
-  .texto-tundra {
+  .texto-tundra,
+  .texto-errantes,
+  .texto-mujer,
+  .texto-desesperados,
+  .texto-caminos,
+  .texto-polvo {
     grid-row: span 6;
     background-color: rgb(240, 240, 240);
   }
 }
-}
-} 
-  
 
-      
-    
-
-
-.seccion-reseña {
-    .seccion-reseña-contenedor {
-      .parte-2 {
-        .portada {
-          width: 300px;
-          margin-top: 50px;
-        }
-
-        .puntuacion {
-          width: 300px;
-          margin-bottom: 30px;
-        }
-      }
-
-      .parte-3 {
-        p {
-          width: 350px;
-          text-align: justify;
-        }
-      }
-    }
+@media (max-width: 710px){
+  .grid-libros-o,
+  .grid-libros-k,
+  .grid-libros-i,
+  .grid-libros-c,
+  .grid-libros-e,
+  .grid-libros-p{
+    display: none;
   }
 }
-
-
-
+  
 
 
 // === Media Query: hasta 620px ===
@@ -154,9 +108,38 @@
     justify-content: center; // centra los ítems dentro del grid
 
   }
-
-
 }
+
+//593 bajar parrafo
+
+@media (max-width: 595px){
+  .grid-monica-ojeda,
+  .grid-han-kang,
+  .grid-rita-indiana,
+  .grid-daniela-catrileo,
+  .grid-mariana-enriquez,
+  .grid-karina-pacheco{
+    display: grid;
+    grid-template-columns: 130px;
+    grid-auto-rows: 200px 200px 200px 200px;
+    column-gap: 10px;   
+    padding: 50px;
+}
+
+.texto-o,
+.texto-k,
+.texto-i,
+.texto-c,
+.texto-e,
+.texto-p{
+  width: 200px;
+ 
+}
+}
+
+
+
+
 
 
 
@@ -171,6 +154,8 @@
     text-align: center;
   }
 }
+
+
 
 // === Media Query: hasta 520px ===
 @media screen and (max-width: 520px) {
@@ -190,6 +175,22 @@
     padding: 20px;
   }
 }
+
+
+@media (max-width: 455px) {
+  .grid-puntuacion-t,
+  .grid-puntuacion-e,
+  .grid-puntuacion-m,
+  .grid-puntuacion-d,
+  .grid-puntuacion-c,
+  .grid-puntuacion-p{
+    display: none;
+  }
+}
+
+    
+
+
 
 // === Media Query: hasta 432px ===
 @media (max-width: 432px) {
@@ -243,8 +244,8 @@
   }
 }
 
-@media (max-width: 620px) {
-  footer {
+@media (max-width: 620px){
+  footer{
     text-align: center;
   }
 }
